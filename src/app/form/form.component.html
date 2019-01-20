@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Id</th>
+    <th (click)="shortData('first_name')">First name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Address</th>
+
+  </tr>
+  <tr *ngFor="let dataset of datalist">
+    <td> {{ dataset.id }}</td>
+    <td> {{ dataset.first_name }}</td>
+    <td> {{ dataset.last_name }}</td>
+    <td> {{ dataset.email }}</td>
+    <td> {{ dataset.gender }}</td>
+    <td> {{ dataset.addres }}</td>
+
+  </tr>
+
+</table>
